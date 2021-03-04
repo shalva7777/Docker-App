@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
 EXPOSE 8080
-ARG JAR_FILE=target/Docker-App-1.0-SNAPSHOT.jar
+ARG JAR_FILE=Docker-App/target/dockerapp-1.0.jar
 ADD ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]

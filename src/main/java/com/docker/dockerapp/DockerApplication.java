@@ -19,7 +19,7 @@ public class DockerApplication {
         SpringApplication.run(DockerApplication.class, args);
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     public String home() {
         return "Hello Docker World";
     }
